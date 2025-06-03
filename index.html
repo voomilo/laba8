@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Викторина с картинками</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Викторина</h1>
+    <div id="quiz">
+      <div id="question-container" class="fade-in">
+        <img id="question-image" src="" alt="Вопрос" />
+        <form id="answers-form"></form>
+        <div id="timer">Время: <span id="time-left"></span> сек</div>
+        <button id="submit-btn" disabled>Ответить</button>
+      </div>
+      <div id="feedback" class="fade-in"></div>
+      <button id="retry-btn" class="hidden">Повторить неправильные</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
